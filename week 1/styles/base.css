@@ -156,10 +156,10 @@ h1 {
 }
 
 .card:first-child img {
-    width: 150px;
-    height: 150px;
+    width: 30px;
+    height: 30px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10%;
     float: left;
     margin-right: 1.5rem;
     margin-bottom: 1rem;
