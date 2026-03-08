@@ -88,6 +88,52 @@ align-items:center;
 width:120px;
 border-radius:5px;
 }
+/* Country section - with flag styling */
+.country-section {
+    margin-top: 1.5rem;
+    clear: both;
+    border-top: 2px dashed var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.country-section h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--accent-teal);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.country-section h3 span {
+   font-size: 2rem;
+   line-height: 1;
+}
+
+.country-content {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.country-content img {
+    width: 180px !important;
+    height: 120px !important;
+    border-radius: 8px !important;
+    float: none !important;
+    border: 2px solid var(--primary-navy) !important;
+    object-fit: cover;
+}
+
+.country-content p {
+    flex: 1;
+    margin: 0;
+    font-style: italic;
+    color: var(--text-light);
+    line-height: 1.7;
+}
 
 /* FOOTER */
 
