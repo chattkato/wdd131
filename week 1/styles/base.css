@@ -1,0 +1,217 @@
+/* styles/base.css */
+
+/* ---------- CSS reset / base ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #f9fbfd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ---------- color schema & typography ---------- */
+h1, h2, #course-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1e3c5c; /* deep navy */
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 3px solid #d4af37; /* gold accent */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: #1e3c5c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #d4af37;
+    text-decoration: underline;
+}
+
+/* ---------- header ---------- */
+header {
+    background: linear-gradient(145deg, #f0f5fa 0%, #dae5f0 100%);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 20, 30, 0.1);
+    border-bottom: 2px solid #b0c4de;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    font-size: 1.9rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+    color: #0a2a44;
+}
+
+/* ---------- navigation flex + hover ---------- */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.2rem;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #d4af37;
+    transition: width 0.3s;
+    margin-top: 4px;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #0f3b5e;
+}
+
+/* ---------- main layout (centered, grid) ---------- */
+main {
+    max-width: 1100px;
+    width: 90%;
+    margin: 2.5rem auto;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+/* ---------- card styling ---------- */
+.card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 4px 8px rgba(0, 30, 40, 0.1);
+    padding: 1.8rem 1.8rem 2.2rem 1.8rem;
+    transition: transform 0.15s ease, box-shadow 0.2s;
+    border: 1px solid rgba(200, 215, 230, 0.6);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 30px rgba(0, 40, 60, 0.12);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.card-content img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 16px;
+    border: 2px solid #e9eef3;
+    object-fit: cover;
+    align-self: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+.card-content p {
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+.card-content ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.card-content li a {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: #ecf3fa;
+    border-radius: 40px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.card-content li a:hover {
+    background-color: #d4af37;
+    color: #0a1f2e;
+    text-decoration: none;
+}
+
+/* ---------- footer ---------- */
+footer {
+    background-color: #1e3c5c;
+    color: #f0f7fe;
+    text-align: center;
+    padding: 1.8rem 1rem;
+    font-size: 1rem;
+    border-top: 5px solid #d4af37;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+footer span {
+    font-weight: 600;
+    color: #f5d98f;
+}
+
+/* ---------- responsive adjustments ---------- */
+@media (min-width: 700px) {
+    .card-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .card-content img {
+        max-width: 160px;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 1.2rem;
+    }
+    h1 {
+        font-size: 1.9rem;
+    }
+    #course-title {
+        font-size: 1.6rem;
+    }
+}
