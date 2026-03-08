@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 – Dynamic Web Fundamentals – Chatt Kato</title>
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Rubia M. Francesco. Home page featuring personal introduction, country information, and web development resources.">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Chatt Kato. Home page featuring personal introduction, country information, and web development resources.">
     <meta name="author" content="Chatt Kato">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
@@ -13,7 +13,7 @@
     <header>
         <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
         <nav>
-            <a href="https://www.linkedin.com/in/chattkato" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/chatt-kato" target="_blank">LinkedIn</a>
             <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
             <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
             <a href="#">Final Project</a>
@@ -23,25 +23,31 @@
     <main>
         <h1>Chatt Kato</h1>
 
+        <!-- First Card: About Me with image on the RIGHT (using float) -->
         <section class="card">
             <h2>About Me</h2>
             <div class="card-content">
-                <img src="images/profile.jpeg" alt="Chatt Kato" loading="lazy">
+                <!-- Profile image - will float to the right -->
+                <img src="images/chatt-profile.jpg" alt="Chatt Kato" loading="lazy" class="profile-image">
+                
+                <!-- Text content - will wrap around the floated image on the left -->
                 <p>My name is Chatt, I was born in Nigeria and live with my family in Abuja, Nigeria. I am currently working as Sales & Business development manager at Netflare. My children are my world and I love spending time with them. I love to travel and I love to learn new things and meet new people.</p>
                 
+                <!-- Clear the float before starting the country section -->
+                <div style="clear: both;"></div>
+                
+                <!-- Country section -->
                 <div class="country-section">
-                    <h3>
-                        <span>🇲🇬</span>
-                        Abuja, Nigeria
-                    </h3>
+                    <h3>🇲🇬 Abuja, Nigeria</h3>
                     <div class="country-content">
-                        <img src="images/Nigerian-flag.jpg" alt="Official flag of Nigeria" loading="lazy">
+                        <img src="images/nigerian-flag.jpg" alt="Official flag of Nigeria" loading="lazy" class="flag-image">
                         <p>Nigeria is the Most populated country and has the largest economy in Africa. It is home to two of the major rivers of Africa (River Niger and River Benue), with Lokoja where both rivers meet and is called the confluence. The capital city of Nigeria is Abuja and it is called the Federal Capital Territory.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Second Card: Web Dev Resources -->
         <section class="card">
             <h2>Web Dev Resources</h2>
             <div class="card-content">
