@@ -1,73 +1,95 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Dynamic Web Fundamentals – Chatt Kato</title>
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Chatt Kato. Home page featuring personal introduction, country information, and web development resources.">
-    <meta name="author" content="Chatt Kato">
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WDD 131 – Dynamic Web Fundamentals – Your Name</title>
+
+<meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Your Name – Web development resources, personal introduction, and learning portfolio.">
+
+<meta name="author" content="Your Name">
+
+<link rel="stylesheet" href="styles/base.css">
+
+<script src="scripts/getdates.js" defer></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <header>
-        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
-        <nav>
-            <a href="https://www.linkedin.com/in/chatt-kato" target="_blank">LinkedIn</a>
-            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
-            <a href="#">Final Project</a>
-        </nav>
-    </header>
 
-    <main>
-        <h1>Chatt Kato</h1>
+<header>
 
-        <!-- First Card: About Me with image on the RIGHT (using float) -->
-        <section class="card">
-            <h2>About Me</h2>
-            <div class="card-content">
-                <!-- Profile image - will float to the right -->
-                <img src="images/chatt-profile.jpg" alt="Chatt Kato" loading="lazy" class="profile-image">
-                
-                <!-- Text content - will wrap around the floated image on the left -->
-                <p>My name is Chatt, I was born in Nigeria and live with my family in Abuja, Nigeria. I am currently working as Sales & Business development manager at Netflare. My children are my world and I love spending time with them. I love to travel and I love to learn new things and meet new people.</p>
-                
-                <!-- Clear the float before starting the country section -->
-                <div style="clear: both;"></div>
-                
-                <!-- Country section -->
-                <div class="country-section">
-                    <h3>🇲🇬 Abuja, Nigeria</h3>
-                    <div class="country-content">
-                        <img src="images/nigerian-flag.jpg" alt="Official flag of Nigeria" loading="lazy" class="flag-image">
-                        <p>Nigeria is the Most populated country and has the largest economy in Africa. It is home to two of the major rivers of Africa (River Niger and River Benue), with Lokoja where both rivers meet and is called the confluence. The capital city of Nigeria is Abuja and it is called the Federal Capital Territory.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
 
-        <!-- Second Card: Web Dev Resources -->
-        <section class="card">
-            <h2>Web Dev Resources</h2>
-            <div class="card-content">
-                <img src="images/dev-resources.jpg" alt="Web development tools and learning platforms" loading="lazy">
-                <ul>
-                    <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
-                    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
-                    <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
-                    <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
-                    <li><a href="https://picsum.photos/" target="_blank">Lorem Picsum Image Placeholder</a></li>
-                </ul>
-            </div>
-        </section>
-    </main>
+<nav>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+<a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+<a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
+<a href="#">Final Project</a>
+</nav>
 
-    <footer>
-        <p>
-            © <span id="currentyear"></span> 🌸 Chatt Kato 🌸 Nigeria
-        </p>
-        <p id="lastModified"></p>
-    </footer>
+</header>
+
+<main>
+
+<h1>Your Name</h1>
+
+<div class="cards">
+
+<section class="card">
+
+<h2>About Me</h2>
+
+<div class="about">
+
+<p>
+My name is Your Name. Write a short introduction about yourself here.
+Explain your background, interests, career goals, and why you are
+studying web development.
+</p>
+
+<img src="images/profile.jpg" alt="Profile photo">
+
+</div>
+
+<h3>Your City, Country</h3>
+
+</section>
+
+
+<section class="card">
+
+<h2>Web Dev Resources</h2>
+
+<ul>
+
+<li><a href="https://dev.to/">Dev.to Community</a></li>
+<li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+<li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+<li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+
+</ul>
+
+</section>
+
+</div>
+
+</main>
+
+
+<footer>
+
+<p>
+© <span id="currentyear"></span> | Your Name | Your Country
+</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
 </body>
 </html>
