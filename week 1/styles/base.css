@@ -150,27 +150,28 @@ h1 {
     gap: 1.25rem;
 }
 
-/* About Me section - image and text layout */
+/* About Me section - image on the right with text in a separate block */
 .card:first-child .card-content {
-    display: block;
+    display: flex;
+    flex-direction: row-reverse;    /* Reverses the order of elements */
+    gap: 1.5rem;
+    align-items: flex-start;
 }
 
 .card:first-child img {
-    width: 10px;
-    height: 10px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 10%;
-    float: left;
-    margin-right: 1.5rem;
-    margin-bottom: 1rem;
+    border-radius: 50%;
     border: 4px solid var(--secondary-gold);
-    shape-outside: circle(50%);
+    flex-shrink: 0;                  /* Prevents image from shrinking */
 }
 
 .card:first-child p {
     text-align: justify;
     margin-bottom: 1rem;
     color: var(--text-light);
+    flex: 1;                          /* Takes up remaining space */
 }
 
 /* Country section - with flag styling */
