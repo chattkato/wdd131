@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 – Dynamic Web Fundamentals – Alex Morgan</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Alex Morgan. A course landing page covering HTML, CSS, JavaScript, and modern web development techniques." />
+  <meta name="author" content="Alex Morgan" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-wrap">
+      <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+      <nav>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scripture</a>
+        <a href="final-project/" target="_blank" rel="noopener">Final Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Alex Morgan</h1>
+
+    <div class="cards-grid">
+
+      <section class="card">
+        <img
+          src="images/web-dev.jpg"
+          alt="Laptop displaying colorful code editor in a modern workspace"
+          width="600"
+          height="400"
+          loading="lazy"
+        />
+        <div class="card-body">
+          <h2>About This Course</h2>
+          <p>
+            WDD 131 introduces dynamic web development using HTML, CSS, and JavaScript. 
+            Throughout the semester, we build real-world projects that are responsive, 
+            accessible, and performant.
+          </p>
+          <ul>
+            <li>Semantic HTML5 structure</li>
+            <li>Modern CSS layout with Flexbox &amp; Grid</li>
+            <li>Interactive JavaScript &amp; DOM manipulation</li>
+            <li>Performance &amp; accessibility best practices</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <img
+          src="images/profile.jpg"
+          alt="Professional photo of Alex Morgan smiling outdoors"
+          width="600"
+          height="400"
+          loading="lazy"
+        />
+        <div class="card-body">
+          <h2>About Me</h2>
+          <p>
+            Hi! I'm Alex Morgan, a student at BYU-Pathway Worldwide pursuing a degree 
+            in Web Development &amp; Design. I'm passionate about creating clean, 
+            user-friendly experiences on the web.
+          </p>
+          <ul>
+            <li>Based in Provo, Utah</li>
+            <li>Interests: UI design, accessibility, open source</li>
+            <li>Currently learning: JavaScript &amp; modern CSS</li>
+            <li>Goal: Full-stack web developer</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> Alex Morgan &mdash; Utah, USA
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>

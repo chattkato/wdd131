@@ -1,0 +1,249 @@
+/* ===== CSS Variables ===== */
+:root {
+  --clr-bg: #0d0f14;
+  --clr-surface: #161a23;
+  --clr-card: #1c2130;
+  --clr-accent: #e8c56d;
+  --clr-accent-dim: rgba(232, 197, 109, 0.15);
+  --clr-text: #e8e8f0;
+  --clr-text-muted: #8a8fa8;
+  --clr-border: rgba(232, 197, 109, 0.2);
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --max-width: 1100px;
+  --radius: 12px;
+  --transition: 0.3s ease;
+}
+
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  font-size: 1rem;
+  line-height: 1.7;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at 10% 0%, rgba(232, 197, 109, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 90% 80%, rgba(100, 120, 200, 0.05) 0%, transparent 50%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--radius);
+}
+
+a {
+  color: var(--clr-accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* ===== Header ===== */
+header {
+  background: var(--clr-surface);
+  border-bottom: 1px solid var(--clr-border);
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  background: rgba(22, 26, 35, 0.9);
+}
+
+header .logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#course-title {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  color: var(--clr-accent);
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+/* ===== Navigation ===== */
+nav {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--clr-text-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: all var(--transition);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: var(--clr-accent);
+  border-color: var(--clr-border);
+  background: var(--clr-accent-dim);
+}
+
+/* ===== Main ===== */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+main > h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #fff 30%, var(--clr-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+main > h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--clr-accent);
+  margin-top: 1rem;
+}
+
+/* ===== Card Grid ===== */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: var(--clr-card);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px var(--clr-accent);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card-body {
+  padding: 1.75rem;
+}
+
+.card h2 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--clr-accent);
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--clr-text-muted);
+  line-height: 1.8;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.75rem;
+}
+
+.card ul li {
+  color: var(--clr-text-muted);
+  font-size: 0.9rem;
+  padding: 0.3rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.card ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--clr-accent);
+}
+
+/* ===== Footer ===== */
+footer {
+  border-top: 1px solid var(--clr-border);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  background: var(--clr-surface);
+}
+
+footer p {
+  font-size: 0.875rem;
+  color: var(--clr-text-muted);
+  margin: 0.4rem 0;
+}
+
+footer #lastModified {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  header .logo-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    gap: 0.25rem;
+  }
+
+  nav a {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  main {
+    padding: 2.5rem 1.25rem;
+  }
+}
