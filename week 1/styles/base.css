@@ -1,21 +1,46 @@
-body{
-font-family: 'Roboto', sans-serif;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* CSS RESET */
+*{
 margin:0;
-background:#f5f5f5;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ROOT COLORS */
+:root{
+--primary:#2b5c82;
+--dark:#333;
+--light:#f5f5f5;
+--card-bg:#ffffff;
+}
+
+/* BODY */
+
+body{
+font-family:'Roboto', sans-serif;
+background:var(--light);
+line-height:1.6;
+color:#222;
+display:flex;
+flex-direction:column;
+min-height:100vh;
 }
 
 /* HEADER */
 
 header{
-background:#2b5c82;
+background:var(--primary);
 color:white;
 text-align:center;
 }
 
 #course-title{
 display:block;
-font-size:1.5rem;
+font-size:1.6rem;
 padding:15px;
+font-weight:bold;
 }
 
 /* NAVIGATION */
@@ -24,8 +49,9 @@ nav{
 display:flex;
 justify-content:center;
 gap:30px;
-background:#333;
+background:var(--dark);
 padding:10px;
+flex-wrap:wrap;
 }
 
 nav a{
@@ -33,24 +59,27 @@ color:white;
 text-decoration:none;
 font-weight:bold;
 padding:8px 12px;
+transition:0.3s;
 }
 
 nav a:hover{
 background:white;
-color:#333;
+color:var(--dark);
 border-radius:5px;
 }
 
-/* MAIN */
+/* MAIN LAYOUT */
 
 main{
 max-width:1000px;
 margin:auto;
 padding:20px;
+flex:1;
 }
 
 h1{
 text-align:center;
+margin-bottom:20px;
 }
 
 /* GRID CARDS */
@@ -61,19 +90,19 @@ grid-template-columns:1fr 1fr;
 gap:20px;
 }
 
+/* CARD */
+
 .card{
-background:white;
-padding:15px;
-border-radius:6px;
-box-shadow:0 0 5px rgba(0,0,0,0.2);
+background:var(--card-bg);
+border-radius:8px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+overflow:hidden;
 }
 
 .card h2{
-background:#2b5c82;
+background:var(--primary);
 color:white;
 padding:10px;
-margin:-15px -15px 10px -15px;
-border-radius:6px 6px 0 0;
 }
 
 /* ABOUT SECTION */
@@ -82,65 +111,91 @@ border-radius:6px 6px 0 0;
 display:flex;
 gap:15px;
 align-items:center;
+padding:15px;
 }
 
 .about img{
-width:120px;
+width:130px;
+border-radius:8px;
+}
+
+/* COUNTRY SECTION */
+
+.card h3{
+padding:0 15px;
+margin-top:10px;
+}
+
+.country-content{
+display:flex;
+gap:15px;
+align-items:center;
+padding:15px;
+}
+
+.country-content img{
+width:150px;
 border-radius:5px;
 }
-/* Country section - with flag styling */
-.country-section {
-    margin-top: 1.5rem;
-    clear: both;
-    border-top: 2px dashed var(--border-color);
-    padding-top: 1.5rem;
+
+/* RESOURCES */
+
+.resources{
+padding:15px;
 }
 
-.country-section h3 {
-    font-family: 'Playfair Display', serif;
-    color: var(--accent-teal);
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+.resources img{
+width:100%;
+max-height:180px;
+object-fit:cover;
+margin-bottom:10px;
+border-radius:5px;
 }
 
-.country-section h3 span {
-   font-size: 2rem;
-   line-height: 1;
+.resources ul{
+list-style:none;
 }
 
-.country-content {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
+.resources li{
+margin-bottom:8px;
 }
 
-.country-content img {
-    width: 180px !important;
-    height: 120px !important;
-    border-radius: 8px !important;
-    float: none !important;
-    border: 2px solid var(--primary-navy) !important;
-    object-fit: cover;
+.resources a{
+text-decoration:none;
+color:var(--primary);
+font-weight:bold;
 }
 
-.country-content p {
-    flex: 1;
-    margin: 0;
-    font-style: italic;
-    color: var(--text-light);
-    line-height: 1.7;
+.resources a:hover{
+text-decoration:underline;
 }
 
 /* FOOTER */
 
 footer{
 text-align:center;
-background:#2b5c82;
+background:var(--primary);
 color:white;
 padding:15px;
 margin-top:20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.about{
+flex-direction:column;
+text-align:center;
+}
+
+.country-content{
+flex-direction:column;
+text-align:center;
+}
+
 }
