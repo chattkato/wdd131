@@ -1,18 +1,9 @@
-// Set footer year and last modified
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('last-modified').textContent = document.lastModified;
+const menuButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
 
-// Hamburger menu toggle
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
-
-hamburger.addEventListener('click', () => {
-    const menu = navMenu.querySelector('ul');
-    if (menu.style.display === 'block') {
-        menu.style.display = 'none';
-        hamburger.innerHTML = '&#9776;'; // Hamburger icon
-    } else {
-        menu.style.display = 'block';
-        hamburger.innerHTML = '&times;'; // Close icon
-    }
+menuButton.addEventListener("click", () => {
+navigation.classList.toggle("open");
 });
+
+document.querySelector("#year").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent = document.lastModified;

@@ -1,91 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<title>Temple Album</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- JavaScript -->
-    <script src="scripts/temples.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Acme&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles/temples.css">
+
+<!-- JavaScript -->
+<script src="scripts/temples.js" defer></script>
+
 </head>
+
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Temple Album</h1>
+<header>
 
-        <!-- Hamburger button (mobile) -->
-        <button id="hamburger">&#9776;</button>
+<h1>Temple Album</h1>
 
-        <!-- Navigation -->
-        <nav id="nav-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
-            </ul>
-        </nav>
-    </header>
+<button id="menu">☰</button>
 
-    <!-- MAIN -->
-    <main>
-        <h2>Our Temple Collection</h2>
+<nav>
+<ul class="navigation">
+<li><a href="#">Home</a></li>
+<li><a href="#">Old</a></li>
+<li><a href="#">New</a></li>
+<li><a href="#">Large</a></li>
+<li><a href="#">Small</a></li>
+</ul>
+</nav>
 
-        <div class="album">
-            <figure>
-                <img src="https://via.placeholder.com/300x200" alt="Temple 1">
-                <figcaption>Temple 1</figcaption>
-            </figure>
-            <figure>
-                <img src="https://via.placeholder.com/300x200" alt="Temple 2">
-                <figcaption>Temple 2</figcaption>
-            </figure>
-            <figure>
-                <img src="https://via.placeholder.com/300x200" alt="Temple 3">
-                <figcaption>Temple 3</figcaption>
-            </figure>
-            <figure>
-                <img src="https://via.placeholder.com/300x200" alt="Temple 4">
-                <figcaption>Temple 4</figcaption>
-            </figure>
-            <figure>
-                <img src="https://via.placeholder.com/300x200" alt="Temple 5">
-                <figcaption>Temple 5</figcaption>
-            </figure>
-            <figure>
-                <img src="https://via.placeholder.com/300x200" alt="Temple 6">
-                <figcaption>Temple 6</figcaption>
-            </figure>
-            <figure>
-                <img src="https://via.placeholder.com/300x200" alt="Temple 7">
-                <figcaption>Temple 7</figcaption>
-            </figure>
-            <figure>
-                <img src="https://via.placeholder.com/300x200" alt="Temple 8">
-                <figcaption>Temple 8</figcaption>
-            </figure>
-            <figure>
-                <img src="https://via.placeholder.com/300x200" alt="Temple 9">
-                <figcaption>Temple 9</figcaption>
-            </figure>
-        </div>
-    </main>
+</header>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; <span id="year"></span> Temple Album. Last modified: <span id="last-modified"></span></p>
-    </footer>
+
+<main>
+
+<h1>Grid Auto Columns and Image Effects</h1>
+
+<section>
+
+<h2 class="stdlf">Barranquilla Colombia Temple</h2>
+
+<div class="container stdlf">
+
+<figure>
+<img class="hover"
+src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
+loading="lazy"
+alt="Barranquilla Colombia Temple">
+<figcaption>Hover shadow effect</figcaption>
+</figure>
+
+<figure>
+<img class="rocorn"
+src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
+loading="lazy"
+alt="Barranquilla Colombia Temple">
+<figcaption>Rounded corners</figcaption>
+</figure>
+
+<figure>
+<img class="opac"
+src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
+loading="lazy"
+alt="Barranquilla Colombia Temple">
+<figcaption>Opacity effect</figcaption>
+</figure>
+
+<figure>
+<img class="blur"
+src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
+loading="lazy"
+alt="Barranquilla Colombia Temple">
+<figcaption>Blur filter</figcaption>
+</figure>
+
+<figure>
+<img class="gray"
+src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
+loading="lazy"
+alt="Barranquilla Colombia Temple">
+<figcaption>Grayscale filter</figcaption>
+</figure>
+
+<figure>
+<img class="object"
+src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
+loading="lazy"
+alt="Barranquilla Colombia Temple">
+<figcaption>Object-fit example</figcaption>
+</figure>
+
+<figure>
+<img class="contrast"
+src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
+loading="lazy"
+alt="Barranquilla Colombia Temple">
+<figcaption>Contrast filter</figcaption>
+</figure>
+
+<figure>
+<img class="saturate"
+src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
+loading="lazy"
+alt="Barranquilla Colombia Temple">
+<figcaption>Saturation filter</figcaption>
+</figure>
+
+<figure>
+<img class="transform"
+src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
+loading="lazy"
+alt="Barranquilla Colombia Temple">
+<figcaption>Horizontal flip</figcaption>
+</figure>
+
+<figure>
+<img class="turn"
+src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
+loading="lazy"
+alt="Barranquilla Colombia Temple">
+<figcaption>Rotation effect</figcaption>
+</figure>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>© <span id="year"></span> | Temple Album | Last Modified: <span id="lastModified"></span></p>
+
+</footer>
 
 </body>
 </html>
