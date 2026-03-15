@@ -11,6 +11,20 @@
         padding: 0 1rem;
     }
 
+    @media (min-width: 768px) {
+
+.navigation {
+display: flex;
+flex-direction: row;
+gap: 1rem;
+}
+
+#menu {
+display: none;
+}
+
+}
+
     #hamburger {
         display: none; /* Hide hamburger on larger screens */
     }
