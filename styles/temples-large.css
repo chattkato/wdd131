@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+
+    nav ul li a {
+        padding: 0 1rem;
+    }
+
+    #hamburger {
+        display: none; /* Hide hamburger on larger screens */
+    }
+
+    .album {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
