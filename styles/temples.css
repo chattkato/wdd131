@@ -143,3 +143,15 @@ rotate: 0.05turn;
 border: 1px solid rgba(0,0,0,0.3);
 padding: 1px;
 }
+
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 1.2rem;
+margin-top: 2rem;
+font-size: 0.9rem;
+border-top: 3px solid #555;
+letter-spacing: 0.5px;
+}
+
