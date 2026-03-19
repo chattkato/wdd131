@@ -1,8 +1,4 @@
-nav {
-display: flex;
-justify-content: center;
-}
-
+/* Base Layout */
 body {
 font-family: Roboto, sans-serif;
 margin: 0;
@@ -19,49 +15,45 @@ align-items: center;
 }
 
 h1 {
-font-size: 2.5rem;
-padding: 1rem;
-background-color: #333;
-text-align: center;
+font-size: 2rem;
 font-family: "Acme", Arial, sans-serif;
-color: white;
 margin: 0;
 }
 
-h2 {
-font-size: 2rem;
-}
-
-.stdlf {
-font-weight: 700;
-border-bottom: 1px solid #777;
-margin-bottom: 1rem;
-}
-
-section {
-margin: 1rem auto;
-max-width: 960px;
-padding: 0.5rem;
+/* NAVIGATION */
+nav {
+display: flex;
+justify-content: center;
 }
 
 .navigation {
 list-style: none;
-display: none;
+display: none; /* Hidden by default (mobile) */
 flex-direction: column;
 padding: 0;
+margin: 0;
+width: 100%;
+background-color: #333;
+}
+
+/* SHOW menu when toggled */
+.navigation.open {
+display: flex;
 }
 
 .navigation li a {
 color: white;
 text-decoration: none;
-padding: 0.5rem;
+padding: 0.75rem;
 display: block;
+text-align: center;
 }
 
 .navigation li a:hover {
 background-color: #555;
 }
 
+/* Hamburger Button */
 #menu {
 font-size: 1.5rem;
 background: none;
@@ -70,13 +62,27 @@ color: white;
 cursor: pointer;
 }
 
+/* MAIN CONTENT */
+section {
+margin: 1rem auto;
+max-width: 960px;
+padding: 0.5rem;
+}
+
+.stdlf {
+font-weight: 700;
+border-bottom: 1px solid #777;
+margin-bottom: 1rem;
+}
+
 .container {
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-grid-gap: 25px;
+grid-template-columns: 1fr; /* Mobile = single column */
+gap: 25px;
 place-items: center;
 }
 
+/* FIGURES */
 figure {
 background-color: white;
 padding: 0.5rem;
@@ -93,8 +99,7 @@ font-size: smaller;
 text-align: center;
 }
 
-/* Image Effects */
-
+/* IMAGE EFFECTS */
 .hover:hover {
 box-shadow: 0 0 50px #333;
 }
@@ -137,20 +142,4 @@ transform: scaleX(-1);
 rotate: 0.05turn;
 border: 1px solid rgba(0,0,0,0.3);
 padding: 1px;
-}
-
-/* Large Screen Navigation */
-
-@media (min-width: 768px){
-
-.navigation{
-display:flex;
-flex-direction:row;
-gap:1rem;
-}
-
-#menu{
-display:none;
-}
-
 }

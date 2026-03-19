@@ -1,35 +1,22 @@
 @media (min-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        width: auto;
-        background-color: transparent;
-    }
 
-    nav ul li a {
-        padding: 0 1rem;
-    }
-
-    @media (min-width: 768px) {
-
+/* SHOW NAV HORIZONTALLY */
 .navigation {
-display: flex;
+display: flex !important;
 flex-direction: row;
+justify-content: center;
 gap: 1rem;
+background-color: transparent;
 }
 
+/* HIDE HAMBURGER */
 #menu {
 display: none;
 }
 
+/* GRID EXPANDS */
+.container {
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-    #hamburger {
-        display: none; /* Hide hamburger on larger screens */
-    }
-
-    .album {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
 }

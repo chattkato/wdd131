@@ -16,7 +16,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Acme&display=swap" rel="stylesheet">
 
-<!-- CSS Files -->
+<!-- CSS -->
 <link rel="stylesheet" href="styles/temples.css">
 <link rel="stylesheet" href="styles/temples-large.css">
 
@@ -31,9 +31,14 @@
 
 <h2>Temple Album</h2>
 
-<button id="menu">☰</button>
+<!-- ✅ Improved Hamburger Button -->
+<button id="menu" aria-label="Toggle navigation menu" aria-expanded="false">
+☰
+</button>
 
-<nav>
+<!-- ✅ Added ID for better control -->
+<nav id="nav-menu">
+
 <ul class="navigation">
 <li><a href="#">Home</a></li>
 <li><a href="#">Old</a></li>
@@ -41,6 +46,7 @@
 <li><a href="#">Large</a></li>
 <li><a href="#">Small</a></li>
 </ul>
+
 </nav>
 
 </header>
@@ -57,75 +63,48 @@
 <div class="container stdlf">
 
 <figure>
-<img class="hover"
-src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
-loading="lazy"
-alt="Barranquilla Colombia Temple">
-<figcaption>Hover shadow effect</figcaption>
+<img class="hover" src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg" loading="lazy" alt="Barranquilla Colombia Temple">
+<figcaption>Barranquilla Colombia Temple</figcaption>
 </figure>
 
 <figure>
-<img class="rocorn"
-src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
-loading="lazy"
-alt="Barranquilla Colombia Temple">
-<figcaption>Rounded corners</figcaption>
+<img class="rocorn" src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg" loading="lazy" alt="Barranquilla Colombia Temple">
+<figcaption>Barranquilla Colombia Temple</figcaption>
 </figure>
 
 <figure>
-<img class="opac"
-src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
-loading="lazy"
-alt="Barranquilla Colombia Temple">
-<figcaption>Opacity effect</figcaption>
+<img class="opac" src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg" loading="lazy" alt="Barranquilla Colombia Temple">
+<figcaption>Barranquilla Colombia Temple</figcaption>
 </figure>
 
 <figure>
-<img class="blur"
-src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
-loading="lazy"
-alt="Barranquilla Colombia Temple">
-<figcaption>Blur filter</figcaption>
+<img class="blur" src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg" loading="lazy" alt="Barranquilla Colombia Temple">
+<figcaption>Barranquilla Colombia Temple</figcaption>
 </figure>
 
 <figure>
-<img class="gray"
-src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
-loading="lazy"
-alt="Barranquilla Colombia Temple">
-<figcaption>Grayscale filter</figcaption>
+<img class="gray" src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg" loading="lazy" alt="Barranquilla Colombia Temple">
+<figcaption>Barranquilla Colombia Temple</figcaption>
 </figure>
 
 <figure>
-<img class="object"
-src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
-loading="lazy"
-alt="Barranquilla Colombia Temple">
-<figcaption>Object-fit example</figcaption>
+<img class="object" src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg" loading="lazy" alt="Barranquilla Colombia Temple">
+<figcaption>Barranquilla Colombia Temple</figcaption>
 </figure>
 
 <figure>
-<img class="contrast"
-src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
-loading="lazy"
-alt="Barranquilla Colombia Temple">
-<figcaption>Contrast filter</figcaption>
+<img class="contrast" src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg" loading="lazy" alt="Barranquilla Colombia Temple">
+<figcaption>Barranquilla Colombia Temple</figcaption>
 </figure>
 
 <figure>
-<img class="saturate"
-src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
-loading="lazy"
-alt="Barranquilla Colombia Temple">
-<figcaption>Saturation filter</figcaption>
+<img class="saturate" src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg" loading="lazy" alt="Barranquilla Colombia Temple">
+<figcaption>Barranquilla Colombia Temple</figcaption>
 </figure>
 
 <figure>
-<img class="transform"
-src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg"
-loading="lazy"
-alt="Barranquilla Colombia Temple">
-<figcaption>Horizontal flip</figcaption>
+<img class="transform" src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/1280x800/3-Barranquilla-Columblia-Temple-2135198.jpg" loading="lazy" alt="Barranquilla Colombia Temple">
+<figcaption>Barranquilla Colombia Temple</figcaption>
 </figure>
 
 </div>
