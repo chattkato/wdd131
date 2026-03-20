@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #008751;
+    --secondary-color: #ffffff;
+    --accent-color: #f0f0f0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 1rem;
+}
+
+.weather h2::after {
+    content: " ⛅";
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .about, .weather {
+        flex: 1;
+    }
+}

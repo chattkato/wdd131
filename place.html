@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Nigeria</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Nigeria</h1>
+</header>
+
+<!-- HERO IMAGE -->
+<section class="hero">
+    <picture>
+        <source srcset="images/nigeria-large.webp" media="(min-width: 768px)">
+        <img src="images/nigeria-small.webp" alt="Nigeria landscape">
+    </picture>
+</section>
+
+<main>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>About Nigeria</h2>
+        <p>
+            Nigeria is a vibrant country in West Africa known for its diverse culture,
+            rich history, and strong economy. It is often called the Giant of Africa.
+        </p>
+    </section>
+
+    <!-- WEATHER -->
+    <section class="weather">
+        <h2>Weather</h2>
+        <p>Temperature: <span id="temp">28</span>°C</p>
+        <p>Wind Speed: <span id="wind">10</span> km/h</p>
+        <p>Wind Chill: <span id="windChill"></span></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
