@@ -7,36 +7,83 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    background-color: var(--secondary-color);
 }
 
+/* Header */
 header {
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
+/* Hero Image */
 .hero img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
+/* Main Content */
 main {
     padding: 1rem;
 }
 
+/* Sections */
+.about,
+.weather {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    border-radius: 8px;
+}
+
+/* Weather Icon */
+.weather-icon {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Weather emoji for large screens */
 .weather h2::after {
     content: " ⛅";
 }
 
-/* Responsive Design */
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* ✅ Visually Hidden (Accessibility Fix) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* Responsive Layout */
 @media (min-width: 768px) {
     main {
         display: flex;
         gap: 2rem;
     }
 
-    .about, .weather {
+    .about,
+    .weather {
         flex: 1;
+    }
+
+    /* Hide SVG on larger screens */
+    .weather-icon {
+        display: none;
     }
 }
