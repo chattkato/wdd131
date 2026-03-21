@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ✅ REQUIRED META TAGS -->
+    <meta name="description" content="Discover Nigeria, a vibrant West African country known for its rich culture, history, and beautiful landscapes.">
+    <meta name="author" content="Chatt Kato">
+
     <title>Discover Nigeria</title>
+
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
@@ -36,6 +42,24 @@
     <!-- WEATHER -->
     <section class="weather">
         <h2>Weather</h2>
+
+        <!-- ✅ SVG WEATHER ICON (Required) -->
+        <div class="weather-icon">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="orange" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="5"/>
+                <g stroke="orange" stroke-width="2">
+                    <line x1="12" y1="1" x2="12" y2="4"/>
+                    <line x1="12" y1="20" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/>
+                    <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="4" y2="12"/>
+                    <line x1="20" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/>
+                    <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+                </g>
+            </svg>
+        </div>
+
         <p>Temperature: <span id="temp">28</span>°C</p>
         <p>Wind Speed: <span id="wind">10</span> km/h</p>
         <p>Wind Chill: <span id="windChill"></span></p>
