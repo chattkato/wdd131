@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Temple album with filtering options">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+
+  <link rel="stylesheet" href="css/filtered-temples.css">
+  <script defer src="js/filtered-temples.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Temple Album</h1>
+
+    <nav aria-label="Temple Filters">
+      <ul class="nav-list">
+        <li><button id="home">Home</button></li>
+        <li><button id="old">Old</button></li>
+        <li><button id="new">New</button></li>
+        <li><button id="large">Large</button></li>
+        <li><button id="small">Small</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cards" class="grid" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Temple Album</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
