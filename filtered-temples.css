@@ -36,14 +36,18 @@ header {
   letter-spacing: 2px;
 }
 
+/* ============================================ */
 /* NAVIGATION - FLEXBOX REQUIRED */
+/* display: flex applied to immediate child of nav (ul) */
+/* ============================================ */
 nav {
   background: var(--primary);
 }
 
 .nav-list {
-  display: flex;
+  display: flex;           /* ✅ REQUIRED: Flexbox on navigation's immediate child */
   justify-content: center;
+  align-items: center;
   list-style: none;
   gap: 0.5rem;
   flex-wrap: wrap;
@@ -62,11 +66,57 @@ nav {
   transition: all 0.3s ease;
 }
 
+/* ============================================ */
 /* HOVER EFFECT - REQUIRED */
+/* :hover pseudo-class on navigation elements */
+/* ============================================ */
 .nav-link:hover {
   background: var(--accent-hover);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ============================================ */
+/* MEDIA QUERIES - REQUIRED */
+/* Multiple breakpoints for responsive design */
+/* ============================================ */
+
+/* Tablet view - 2 columns */
+@media (min-width: 640px) {
+  .temple-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .header-brand {
+    font-size: 2rem;
+  }
+}
+
+/* Desktop view - 3 columns */
+@media (min-width: 1024px) {
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  main {
+    max-width: 1200px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .card h2 {
+    font-size: 1.2rem;
+  }
 }
 
 /* MAIN CONTENT */
@@ -87,24 +137,12 @@ h1 {
   padding-bottom: 0.5rem;
 }
 
-/* TEMPLE GRID - CSS GRID REQUIRED */
+/* TEMPLE GRID - CSS GRID */
 .temple-grid {
   display: grid;
   gap: 1.5rem;
   padding: 0.5rem;
-}
-
-/* MEDIA QUERIES - REQUIRED */
-@media (min-width: 640px) {
-  .temple-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .temple-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  grid-template-columns: 1fr;  /* Default: 1 column on mobile */
 }
 
 /* CARD STYLES */
@@ -158,18 +196,10 @@ footer p {
   margin: 0.3rem 0;
 }
 
-/* RESPONSIVE ADJUSTMENTS */
-@media (max-width: 480px) {
-  .nav-link {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-  
-  h1 {
-    font-size: 1.8rem;
-  }
-  
-  .card h2 {
-    font-size: 1.2rem;
-  }
+/* Active filter styling */
+.nav-link.active {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
 }
