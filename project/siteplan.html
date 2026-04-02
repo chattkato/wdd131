@@ -3,63 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Plan | Netflare Solutions</title>
 
-    <!-- Google Font -->
+    <!-- REQUIRED META -->
+    <meta name="description" content="Website planning document for Netflare Solutions including purpose, design, and wireframes.">
+    <meta name="author" content="Your Name">
+
+    <title>Netflare Site Plan</title>
+
+    <!-- GOOGLE FONTS (FIXED) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --primary: #0a66c2;
-            --secondary: #ff6b35;
-            --background: #f4f7fb;
-            --text: #1a1a1a;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--background);
-            color: var(--text);
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        h1, h2 {
-            color: var(--primary);
-        }
-
-        section {
-            background: #ffffff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-
-        .accent {
-            color: var(--secondary);
-        }
-
-        .wireframe {
-            border: 2px dashed #ccc;
-            padding: 15px;
-            margin-top: 10px;
-        }
-
-        .box {
-            border: 1px solid #999;
-            padding: 12px;
-            margin: 6px 0;
-            text-align: center;
-            background: #fafafa;
-        }
-    </style>
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <header>
@@ -67,13 +26,14 @@
     <p class="accent">Website Planning Document</p>
 </header>
 
+<main>
+
 <section>
     <h2>Site Name</h2>
     <p><strong>Netflare Solutions</strong></p>
     <p>
-        The name "Netflare Solutions" reflects a modern technology company focused on delivering fast,
-        reliable, and scalable IT solutions. It communicates innovation, digital transformation,
-        and enterprise-grade services.
+        The name represents a technology company focused on delivering fast, reliable,
+        and scalable IT solutions. It reflects innovation and digital transformation.
     </p>
     <p><strong>Optional Domain:</strong> netflaresolutions.com</p>
 </section>
@@ -81,47 +41,39 @@
 <section>
     <h2>Site Purpose</h2>
     <p>
-        The purpose of this website is to present Netflare’s services in cybersecurity,
-        cloud infrastructure, and enterprise IT solutions. The site will help businesses
-        understand available solutions, view service offerings, and request consultations.
-        It will also serve as a professional online presence to build trust and credibility.
+        This website will showcase Netflare’s services including cybersecurity,
+        cloud solutions, and enterprise IT systems. It will allow users to learn
+        about services and request consultations.
     </p>
 </section>
 
 <section>
     <h2>Scenarios</h2>
     <ul>
-        <li>How can I protect my company from cyber security threats?</li>
-        <li>What services does Netflare offer for financial institutions?</li>
-        <li>How can I contact Netflare to schedule a consultation?</li>
+        <li>How can I protect my company from cyber threats?</li>
+        <li>What IT services does Netflare offer?</li>
     </ul>
 </section>
 
 <section>
     <h2>Color Schema</h2>
 
-    <p><strong>Primary Color: #0a66c2 (Blue)</strong></p>
-    <ul>
-        <li>Used for headings, navigation bar, and key sections</li>
-    </ul>
+    <p><strong>Primary Color: #0a66c2</strong></p>
+    <p>Used for headings and navigation</p>
 
-    <p><strong>Secondary Color: #ff6b35 (Orange)</strong></p>
-    <ul>
-        <li>Used for buttons, highlights, and call-to-action elements</li>
-    </ul>
+    <p><strong>Secondary Color: #ff6b35</strong></p>
+    <p>Used for buttons and highlights</p>
 
-    <p><strong>Background Color: #f4f7fb (Light Gray)</strong></p>
-    <ul>
-        <li>Used for overall page background</li>
-    </ul>
+    <p><strong>Background: #f4f7fb</strong></p>
+    <p>Used for page background</p>
 
 </section>
 
 <section>
     <h2>Typography</h2>
     <ul>
-        <li><strong>Poppins</strong> – Used for headings and body text</li>
-        <li><strong>Sans-serif (fallback)</strong> – Used if Poppins is unavailable</li>
+        <li><strong>Poppins</strong> – used for headings and body text</li>
+        <li><strong>Sans-serif</strong> – fallback font</li>
     </ul>
 </section>
 
@@ -132,9 +84,8 @@
     <div class="wireframe">
         <div class="box">Logo</div>
         <div class="box">Menu</div>
-        <div class="box">Hero Section</div>
+        <div class="box">Hero</div>
         <div class="box">Services</div>
-        <div class="box">About</div>
         <div class="box">Contact</div>
     </div>
 
@@ -142,7 +93,7 @@
     <div class="wireframe">
         <div class="box">Logo | Navigation</div>
         <div class="box">Hero Banner</div>
-        <div class="box">Services | Services | Services</div>
+        <div class="box">Services Grid</div>
         <div class="box">About Section</div>
         <div class="box">Contact Form</div>
         <div class="box">Footer</div>
@@ -153,13 +104,14 @@
 <section>
     <h2>Testing & Evaluation</h2>
     <ul>
-        <li>Validated HTML using W3C Validator</li>
+        <li>Validated HTML with W3C validator</li>
+        <li>Validated CSS with W3C CSS validator</li>
         <li>Checked accessibility using Lighthouse</li>
-        <li>Ensured proper color contrast for readability</li>
-        <li>Tested responsiveness on mobile and desktop screens</li>
-        <li>Included basic SEO elements such as title and meta tags</li>
+        <li>Tested responsiveness on mobile and desktop</li>
     </ul>
 </section>
+
+</main>
 
 </body>
 </html>
