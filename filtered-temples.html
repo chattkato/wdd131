@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
   <meta name="description" content="Explore temples with filtering options by age and size.">
   <meta name="author" content="Your Name">
 
   <title>Temple Album</title>
 
-  <!-- Correct CSS path -->
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/filtered-temples.css">
 
-  <!-- Correct JS path -->
+  <!-- JS -->
   <script defer src="scripts/filtered-temples.js"></script>
 </head>
 
 <body>
 
-  <!-- ✅ REQUIRED HEADER (FIXED) -->
+  <!-- HEADER (REQUIRED: must contain "Temple Album") -->
   <header>
     <h1>Temple Album</h1>
 
     <nav aria-label="Temple Navigation">
-      <ul class="nav">
+      <ul>
         <li><a href="#" id="home">Home</a></li>
         <li><a href="#" id="old">Old</a></li>
         <li><a href="#" id="new">New</a></li>
@@ -34,7 +36,8 @@
 
   <!-- MAIN CONTENT -->
   <main>
-    <section id="cards" class="grid"></section>
+    <!-- This is where JS injects temple cards -->
+    <section id="cards" class="grid" aria-live="polite"></section>
   </main>
 
   <!-- FOOTER -->
