@@ -2,7 +2,7 @@
 // TEMPLE ARRAY (7 + 3 = 10)
 // ===============================
 const temples = [
-  { name: "Salt Lake Temple", location: "Utah, USA", dedicated: "1893-04-06", area: 253000, imageUrl: "https://churchofjesuschristtemples.org/salt-lake-temple/photographs/#Gallery-7.jpg" },
+  { name: "Salt Lake Temple", location: "Utah, USA", dedicated: "1893-04-06", area: 253000, imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-8458.jpg" },
   { name: "Laie Hawaii Temple", location: "Hawaii, USA", dedicated: "1919-11-27", area: 42100, imageUrl: "https://churchofjesuschristtemples.org/laie-hawaii-temple/photographs/#Gallery-1.jpg" },
   { name: "Cardston Alberta Temple", location: "Canada", dedicated: "1923-08-26", area: 88562, imageUrl: "https://churchofjesuschristtemples.org/cardston-alberta-temple/photographs/#Gallery-1.jpg" },
   { name: "Mesa Arizona Temple", location: "Arizona, USA", dedicated: "1927-10-23", area: 113916, imageUrl: "https://churchofjesuschristtemples.org/mesa-arizona-temple/photographs/#Gallery-1.jpg" },
