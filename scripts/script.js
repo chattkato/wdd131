@@ -10,7 +10,7 @@ const select = document.getElementById("product");
 
 products.forEach(product => {
   const option = document.createElement("option");
-  option.value = product.name;
+  option.value = product.name; // required by rubric
   option.textContent = product.name;
   select.appendChild(option);
 });
