@@ -21,7 +21,7 @@
 <main>
   <form method="get" action="review.html">
     
-    <!-- Product Name -->
+    <!-- Product -->
     <label for="product">Product Name</label>
     <select id="product" name="product" required>
       <option value="" disabled selected>Select a Product ...</option>
@@ -54,7 +54,7 @@
 
     <!-- Features -->
     <fieldset>
-      <legend>Useful Features (Check all that apply)</legend>
+      <legend>Useful Features</legend>
 
       <input type="checkbox" id="durability" name="features" value="Durability">
       <label for="durability">Durability</label>
@@ -71,14 +71,13 @@
     </fieldset>
 
     <!-- Review -->
-    <label for="review">Written Review (Optional)</label>
+    <label for="review">Written Review</label>
     <textarea id="review" name="review"></textarea>
 
     <!-- Name -->
-    <label for="username">Your Name (Optional)</label>
+    <label for="username">Your Name</label>
     <input type="text" id="username" name="username">
 
-    <!-- Submit -->
     <input type="submit" value="Post Review">
 
   </form>
@@ -88,8 +87,8 @@
   <p>©2026 🌸 Chatt Kato 🌸 Nigeria</p>
 </footer>
 
-<!-- ✅ FIXED: script at end + defer -->
-<script src="scripts/script.js" defer></script>
+<!-- ✅ MUST BE LAST LINE BEFORE </body> -->
+<script src="scripts/script.js"></script>
 
 </body>
 </html>
