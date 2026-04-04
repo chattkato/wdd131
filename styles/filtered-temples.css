@@ -1,28 +1,66 @@
+:root {
+  --primary: #1a1a1a;
+  --accent: #005f99;
+  --accent-hover: #004070;
+  --background: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+}
+
+/* HEADER */
+header {
+  background: var(--primary);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* NAVIGATION */
 nav ul {
-  display: flex;
+  display: flex; /* REQUIRED */
   justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0.5rem;
 }
 
 nav a {
-  padding: 0.5rem 1rem;
+  display: block;
+  padding: 0.6rem 1rem;
+  background: var(--accent);
+  color: #ffffff;
   text-decoration: none;
-  background: #005f99;
-  color: white;
-  margin: 0.3rem;
+  border-radius: 6px;
 }
 
+/* REQUIRED HOVER */
 nav a:hover {
-  background: #003f66;
+  background: var(--accent-hover);
 }
 
+/* MAIN */
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* GRID */
 .grid {
   display: grid;
   gap: 1rem;
   padding: 1rem;
 }
 
+/* MEDIA QUERIES (REQUIRED) */
 @media (min-width: 600px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -33,4 +71,30 @@ nav a:hover {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* CARD DESIGN */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
 }
