@@ -4,37 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Explore temples with filtering options by age and size.">
-  <meta name="author" content="Chatt Kato">
+  <meta name="author" content="Your Name">
 
   <title>Temple Album</title>
 
+  <!-- Correct CSS path -->
   <link rel="stylesheet" href="styles/filtered-temples.css">
+
+  <!-- Correct JS path -->
   <script defer src="scripts/filtered-temples.js"></script>
 </head>
 
 <body>
 
-<header>
-  <nav>
-    <ul class="nav">
-      <li><a href="#" id="home">Home</a></li>
-      <li><a href="#" id="old">Old</a></li>
-      <li><a href="#" id="new">New</a></li>
-      <li><a href="#" id="large">Large</a></li>
-      <li><a href="#" id="small">Small</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- ✅ REQUIRED HEADER (FIXED) -->
+  <header>
+    <h1>Temple Album</h1>
 
-<main>
-  <h1>Temple Album</h1>
-  <section id="cards" class="grid"></section>
-</main>
+    <nav aria-label="Temple Navigation">
+      <ul class="nav">
+        <li><a href="#" id="home">Home</a></li>
+        <li><a href="#" id="old">Old</a></li>
+        <li><a href="#" id="new">New</a></li>
+        <li><a href="#" id="large">Large</a></li>
+        <li><a href="#" id="small">Small</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<footer>
-  <p>&copy; <span id="year"></span></p>
-  <p>Last Modified: <span id="lastModified"></span></p>
-</footer>
+  <!-- MAIN CONTENT -->
+  <main>
+    <section id="cards" class="grid"></section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; <span id="year"></span> Temple Album</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
 
 </body>
 </html>
