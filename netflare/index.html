@@ -1,58 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="description" content="Netflare provides broadband, cybersecurity, and cloud solutions in Nigeria.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Netflare | Digital Solutions</title>
-
-<link rel="stylesheet" href="styles/style.css">
-<script src="scripts/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="description" content="Netflare provides broadband internet, cybersecurity, cloud, and ICT solutions across Nigeria.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflare | Powering Nigeria's Digital Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/script.js" defer></script>
 </head>
-
 <body>
 
-<header>
-  <h1>Netflare</h1>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Netflare home">
+        <span class="logo-mark">NF</span>
+        <span class="logo-text">Netflare</span>
+      </a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-  <nav aria-label="Primary Navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <main>
 
-<main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+        <div class="hero-badge">Nigeria's Connectivity Leader</div>
+        <h1 class="hero-heading">
+          Fast. Secure.<br>
+          <span class="accent-text">Always Connected.</span>
+        </h1>
+        <p class="hero-sub">Netflare delivers enterprise-grade broadband, cybersecurity, and cloud infrastructure built for Nigeria's most demanding businesses.</p>
+        <div class="hero-actions">
+          <button id="ctaBtn" class="btn btn-primary">Get Started</button>
+          <a href="services.html" class="btn btn-outline">Our Services</a>
+        </div>
+        <p id="welcomeMsg" class="welcome-msg" aria-live="polite"></p>
+      </div>
+      <div class="hero-visual">
+        <img src="images/hero.jpg" alt="High-speed fiber network infrastructure" loading="eager" class="hero-img">
+        <div class="hero-stat-card card-top">
+          <span class="stat-number">99.9%</span>
+          <span class="stat-label">Uptime SLA</span>
+        </div>
+        <div class="hero-stat-card card-bottom">
+          <span class="stat-number">10Gbps</span>
+          <span class="stat-label">Max Throughput</span>
+        </div>
+      </div>
+    </section>
 
-<section class="hero">
-  <img src="images/hero.jpg" alt="Digital technology network" loading="eager">
-  
-  <div class="hero-text">
-    <h2>Reliable Digital Infrastructure for Modern Businesses</h2>
-    <p>Netflare delivers broadband, cloud, and cybersecurity solutions designed for performance and scalability.</p>
+    <!-- TRUST BAR -->
+    <section class="trust-bar" aria-label="Company highlights">
+      <div class="trust-inner">
+        <div class="trust-item">
+          <span class="trust-num">500+</span>
+          <span class="trust-label">Enterprise Clients</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-num">8</span>
+          <span class="trust-label">States Covered</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-num">24/7</span>
+          <span class="trust-label">NOC Support</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-item">
+          <span class="trust-num">10+</span>
+          <span class="trust-label">Years in Operation</span>
+        </div>
+      </div>
+    </section>
 
-    <button id="ctaBtn">Get Started</button>
-    <p id="welcomeMsg" aria-live="polite"></p>
-  </div>
-</section>
+    <!-- SERVICES PREVIEW -->
+    <section class="services-section">
+      <div class="section-inner">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-heading">Solutions Built for Scale</h2>
+        <p class="section-sub">From last-mile broadband to enterprise cloud, every Netflare product is engineered for performance and reliability.</p>
 
-<section class="services">
-  <h2>Our Services</h2>
+        <input type="search" id="searchBox" placeholder="Search services..." aria-label="Search services" class="search-input">
 
-  <input type="search" id="searchBox" placeholder="Search services..." aria-label="Search services">
+        <div id="servicesContainer" class="services-grid"></div>
+      </div>
+    </section>
 
-  <div id="servicesContainer"></div>
-</section>
+    <!-- WHY NETFLARE -->
+    <section class="why-section">
+      <div class="why-inner">
+        <div class="why-text">
+          <div class="section-label">Why Netflare</div>
+          <h2 class="section-heading">Built Different. Built for Nigeria.</h2>
+          <p>We are not a reseller. Every solution we deploy is designed, installed, and managed by our own engineering team — giving you accountability that third-party providers simply cannot offer.</p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:1.5rem; display:inline-block;">Talk to an Engineer</a>
+        </div>
+        <div class="why-cards">
+          <div class="why-card">
+            <div class="why-icon">⚡</div>
+            <h3>Lightning Speeds</h3>
+            <p>Fiber and wireless last-mile options designed for low-latency, high-throughput enterprise workloads.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">🛡️</div>
+            <h3>Zero-Trust Security</h3>
+            <p>End-to-end encryption, threat monitoring, and compliance support baked into every connection.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">☁️</div>
+            <h3>Hybrid Cloud</h3>
+            <p>Flexible public, private, and hybrid cloud environments with local data residency options.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">👥</div>
+            <h3>Local Support Team</h3>
+            <p>Our Abuja-based NOC engineers respond within minutes, not hours. Real humans, real accountability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</main>
+  </main>
 
-<footer>
-  <p>&copy; 2026 Netflare Nigeria</p>
-  <a href="references.html">References</a>
-</footer>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">NF</span>
+        <span class="logo-text">Netflare</span>
+        <p class="footer-tagline">Powering Nigeria's Digital Future</p>
+      </div>
+      <nav aria-label="Footer Navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Netflare Nigeria Limited. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>

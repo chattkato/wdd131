@@ -1,16 +1,156 @@
-<form id="contactForm" novalidate>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Get in touch with Netflare Nigeria for broadband, cybersecurity, cloud, and ICT services.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Netflare Nigeria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
 
-<label for="name">Full Name</label>
-<input id="name" name="name" type="text" required>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Netflare home">
+        <span class="logo-mark">NF</span>
+        <span class="logo-text">Netflare</span>
+      </a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-<label for="email">Email Address</label>
-<input id="email" name="email" type="email" required>
+  <main>
 
-<label for="message">Message</label>
-<textarea id="message" name="message" required></textarea>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="section-label">Get In Touch</div>
+        <h1 class="page-hero-heading">Let's Talk<br><span class="accent-text">About Your Network</span></h1>
+        <p class="page-hero-sub">Our engineers are ready to assess your connectivity needs and design a solution that works. No pressure, just practical advice.</p>
+      </div>
+    </section>
 
-<button type="submit">Submit</button>
+    <!-- CONTACT LAYOUT -->
+    <section class="contact-section">
+      <div class="contact-inner">
 
-</form>
+        <!-- INFO COLUMN -->
+        <div class="contact-info">
+          <h2>Reach Us Directly</h2>
+          <p>Netflare Nigeria Limited is headquartered in Abuja, FCT. Our team serves clients across Nigeria with on-site engineering support where needed.</p>
 
-<p id="formFeedback" aria-live="polite"></p>
+          <ul class="contact-details">
+            <li>
+              <span class="contact-icon" aria-hidden="true">📍</span>
+              <div>
+                <strong>Office Address</strong><br>
+                Plot 1234, Wuse Zone 5,<br>Abuja, FCT, Nigeria
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">📞</span>
+              <div>
+                <strong>Phone</strong><br>
+                +234 800 NETFLARE
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">✉️</span>
+              <div>
+                <strong>Email</strong><br>
+                info@netflare.com.ng
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">🕒</span>
+              <div>
+                <strong>Business Hours</strong><br>
+                Monday to Friday, 8am to 6pm WAT<br>
+                NOC support available 24/7
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- FORM COLUMN -->
+        <div class="contact-form-wrap">
+          <h2>Send a Message</h2>
+          <form id="contactForm" class="contact-form" novalidate>
+
+            <div class="form-group">
+              <label for="name">Full Name <span class="required" aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" placeholder="e.g. Chukwuemeka Okonkwo" required autocomplete="name">
+              <span class="field-error" id="nameError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" placeholder="you@company.com" required autocomplete="email">
+              <span class="field-error" id="emailError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service of Interest</label>
+              <select id="service" name="service">
+                <option value="">Select a service (optional)</option>
+                <option value="broadband">Broadband Solutions</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="cloud">Cloud Services</option>
+                <option value="flareDMS">FlareDMS</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your connectivity needs or the challenge you are trying to solve..." required></textarea>
+              <span class="field-error" id="messageError" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+
+          </form>
+          <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">NF</span>
+        <span class="logo-text">Netflare</span>
+        <p class="footer-tagline">Powering Nigeria's Digital Future</p>
+      </div>
+      <nav aria-label="Footer Navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Netflare Nigeria Limited. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

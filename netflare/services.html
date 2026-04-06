@@ -1,25 +1,158 @@
-<main>
-<h2>Our Solutions</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Explore Netflare's full range of broadband, cybersecurity, cloud, and ICT services for Nigerian enterprises.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Netflare Nigeria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
 
-<section class="grid">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Netflare home">
+        <span class="logo-mark">NF</span>
+        <span class="logo-text">Netflare</span>
+      </a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-<article class="card">
-  <img src="images/broadband.jpg" alt="Fiber broadband" loading="lazy">
-  <h3>Broadband Solutions</h3>
-  <p>High-speed fiber, wireless and VSAT internet solutions for businesses.</p>
-</article>
+  <main>
 
-<article class="card">
-  <img src="images/security.jpg" alt="Cybersecurity protection" loading="lazy">
-  <h3>Cybersecurity</h3>
-  <p>Protect your infrastructure with enterprise-grade security systems.</p>
-</article>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="section-label">Our Solutions</div>
+        <h1 class="page-hero-heading">Enterprise ICT Services<br><span class="accent-text">Built for Nigeria</span></h1>
+        <p class="page-hero-sub">From fiber broadband to full-stack cybersecurity, Netflare designs, deploys, and manages the technology backbone your business depends on.</p>
+      </div>
+    </section>
 
-<article class="card">
-  <img src="images/cloud.jpg" alt="Cloud computing" loading="lazy">
-  <h3>Cloud Services</h3>
-  <p>Reliable cloud hosting, storage, and disaster recovery solutions.</p>
-</article>
+    <!-- SERVICES FULL GRID -->
+    <section class="services-detail-section">
+      <div class="section-inner">
 
-</section>
-</main>
+        <article class="service-detail-card">
+          <div class="service-detail-img">
+            <img src="images/broadband.jpg" alt="Fiber optic broadband infrastructure" loading="lazy">
+          </div>
+          <div class="service-detail-body">
+            <div class="service-tag">Connectivity</div>
+            <h2>Broadband Solutions</h2>
+            <p>High-speed fiber, wireless, and VSAT internet solutions engineered for enterprise reliability. Whether your facility needs dedicated leased lines or a resilient multi-path connection, Netflare has a last-mile option that fits.</p>
+            <ul class="service-features">
+              <li>Dedicated fiber (10Mbps to 10Gbps)</li>
+              <li>Licensed microwave links</li>
+              <li>VSAT for remote site coverage</li>
+              <li>99.9% uptime SLA with NOC monitoring</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+          </div>
+        </article>
+
+        <article class="service-detail-card reverse">
+          <div class="service-detail-img">
+            <img src="images/security.jpg" alt="Cybersecurity threat monitoring dashboard" loading="lazy">
+          </div>
+          <div class="service-detail-body">
+            <div class="service-tag">Security</div>
+            <h2>Cybersecurity</h2>
+            <p>Protect your infrastructure, data, and users with Netflare's layered security architecture. We implement zero-trust principles across your network perimeter, endpoint devices, and cloud environments.</p>
+            <ul class="service-features">
+              <li>Next-gen firewall deployment and management</li>
+              <li>24/7 Security Operations Center (SOC)</li>
+              <li>Vulnerability assessment and penetration testing</li>
+              <li>NDPR and regulatory compliance support</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+          </div>
+        </article>
+
+        <article class="service-detail-card">
+          <div class="service-detail-img">
+            <img src="images/cloud.jpg" alt="Cloud computing server infrastructure" loading="lazy">
+          </div>
+          <div class="service-detail-body">
+            <div class="service-tag">Cloud</div>
+            <h2>Cloud Services</h2>
+            <p>Flexible cloud hosting, storage, and disaster recovery solutions with local data residency options. Netflare's cloud platforms are designed for Nigerian bandwidth realities — low latency, high availability, always on.</p>
+            <ul class="service-features">
+              <li>Public, private, and hybrid cloud deployments</li>
+              <li>Managed backup and disaster recovery</li>
+              <li>Microsoft 365 and Google Workspace licensing</li>
+              <li>Infrastructure as a Service (IaaS) and SaaS</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+          </div>
+        </article>
+
+        <article class="service-detail-card reverse">
+          <div class="service-detail-img">
+            <img src="images/dms.jpg" alt="Document management software interface" loading="lazy">
+          </div>
+          <div class="service-detail-body">
+            <div class="service-tag">Software</div>
+            <h2>FlareDMS</h2>
+            <p>Netflare's flagship document management system built for African enterprises. FlareDMS brings enterprise document control, workflow automation, and regulatory audit trails to businesses of all sizes — with on-premise or cloud deployment options.</p>
+            <ul class="service-features">
+              <li>Role-based access control and audit logs</li>
+              <li>OCR and full-text document search</li>
+              <li>Automated approval workflows</li>
+              <li>ISO 27001-aligned security architecture</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Request a Demo</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="cta-band-inner">
+        <h2>Ready to upgrade your infrastructure?</h2>
+        <p>Speak with a Netflare engineer today. No sales scripts, just honest technical advice.</p>
+        <a href="contact.html" class="btn btn-light">Contact Us Now</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">NF</span>
+        <span class="logo-text">Netflare</span>
+        <p class="footer-tagline">Powering Nigeria's Digital Future</p>
+      </div>
+      <nav aria-label="Footer Navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Netflare Nigeria Limited. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
